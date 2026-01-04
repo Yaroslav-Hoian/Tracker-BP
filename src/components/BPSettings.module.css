@@ -1,0 +1,84 @@
+.bpSettings {
+  background-color: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 80px;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bpSettingsTitle {
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.bpSettingsContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.bpEarned {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bpEarnedLabel {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.bpEarnedValue {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.selectTasksButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: 2px solid var(--accent-color);
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.selectTasksButton:hover {
+  background-color: var(--accent-color-hover);
+  border-color: var(--accent-color-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--accent-color-light);
+}
+
+@media (max-width: 768px) {
+  .bpSettings {
+    position: relative;
+    top: 0;
+  }
+
+  .bpSettingsContent {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .bpEarned {
+    justify-content: center;
+  }
+
+  .selectTasksButton {
+    width: 100%;
+  }
+}
+

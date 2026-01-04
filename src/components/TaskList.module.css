@@ -1,0 +1,23 @@
+.taskList {
+  margin-bottom: 2rem;
+}
+
+.taskListTitle {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.taskListEmpty {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.taskListItems {
+  display: flex;
+  flex-direction: column;
+}
+
