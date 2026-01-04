@@ -59,7 +59,7 @@ const translations: Record<Language, Translations> = {
       feedback: "Зворотний зв'язок",
       feedbackText:
         "Ми завжди раді вашому зворотному зв'язку та пропозиціям щодо покращення трекера.",
-      copyright: "© 2024 Tracker BP. Всі права захищені.",
+      copyright: "© 2026 Tracker BP. Всі права захищені.",
     },
     settings: {
       title: "Зароблені BP",
@@ -103,7 +103,7 @@ const translations: Record<Language, Translations> = {
       feedback: "Обратная связь",
       feedbackText:
         "Мы всегда рады вашей обратной связи и предложениям по улучшению трекера.",
-      copyright: "© 2024 Tracker BP. Все права защищены.",
+      copyright: "© 2026 Tracker BP. Все права защищены.",
     },
     settings: {
       title: "Заработанные BP",
