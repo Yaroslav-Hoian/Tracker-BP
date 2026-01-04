@@ -154,8 +154,10 @@
   }
 }
 
+/* Tablet */
 @media (max-width: 768px) {
   .taskHeader {
+    padding: 0.75rem 1rem;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -164,10 +166,45 @@
     width: 100%;
   }
 
+  .taskTitle {
+    min-width: auto;
+    font-size: 1rem;
+  }
+
   .taskBp {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+  .taskHeader {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .taskTitle {
+    font-size: 0.9rem;
+  }
+
+  .taskCounter {
+    padding: 0.2rem 0.5rem;
+  }
+
+  .counterButton {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .taskBp {
+    padding: 0.4rem 0.75rem;
+  }
+
+  .bpValue {
+    font-size: 1.1rem;
   }
 }
 

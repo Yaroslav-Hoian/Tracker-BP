@@ -14,8 +14,27 @@
   margin: 0 auto;
 }
 
+/* Desktop */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/* Tablet */
 @media (max-width: 768px) {
   .main-content {
     padding: 1rem;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+  .main-content {
+    padding: 0.75rem;
   }
 }

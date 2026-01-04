@@ -62,23 +62,107 @@
   box-shadow: 0 4px 12px var(--accent-color-light);
 }
 
+.actionButtons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.initialBPButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: 2px solid var(--border-color);
+  background-color: var(--button-bg);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.initialBPButton:hover {
+  background-color: var(--button-hover);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.multiplierButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.multiplierButton {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 2px solid var(--accent-color);
+  background-color: var(--card-bg);
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 60px;
+}
+
+.multiplierButton:hover {
+  background-color: var(--accent-color-light);
+}
+
+.multiplierButtonActive {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.multiplierButtonActive:hover {
+  background-color: var(--accent-color-hover);
+  border-color: var(--accent-color-hover);
+}
+
+/* Tablet */
 @media (max-width: 768px) {
   .bpSettings {
     position: relative;
     top: 0;
+    padding: 1rem;
   }
 
   .bpSettingsContent {
     flex-direction: column;
     align-items: stretch;
+    gap: 1rem;
   }
 
   .bpEarned {
     justify-content: center;
   }
 
+  .multiplierButtons {
+    justify-content: center;
+  }
+
   .selectTasksButton {
     width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+  .bpSettings {
+    padding: 0.75rem;
+  }
+
+  .bpSettingsTitle {
+    font-size: 1.1rem;
+  }
+
+  .bpEarnedValue {
+    font-size: 1.5rem;
+  }
+
+  .multiplierButton {
+    min-width: 50px;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.85rem;
   }
 }
 

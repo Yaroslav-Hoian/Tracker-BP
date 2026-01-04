@@ -10,6 +10,7 @@ export const initialTasks: Task[] = [
     currentCompletions: 0,
     completed: false,
     visible: true,
+    bpAwarded: false,
   },
   {
     id: '2',
@@ -20,6 +21,7 @@ export const initialTasks: Task[] = [
     currentCompletions: 0,
     completed: false,
     visible: true,
+    bpAwarded: false,
   },
   {
     id: '3',
@@ -30,6 +32,7 @@ export const initialTasks: Task[] = [
     currentCompletions: 0,
     completed: false,
     visible: true,
+    bpAwarded: false,
   },
   {
     id: '4',
@@ -40,6 +43,7 @@ export const initialTasks: Task[] = [
     currentCompletions: 0,
     completed: false,
     visible: true,
+    bpAwarded: false,
   },
   {
     id: '5',
@@ -50,6 +54,7 @@ export const initialTasks: Task[] = [
     currentCompletions: 0,
     completed: false,
     visible: true,
+    bpAwarded: false,
   },
   {
     id: '6',
@@ -60,6 +65,7 @@ export const initialTasks: Task[] = [
     currentCompletions: 0,
     completed: false,
     visible: true,
+    bpAwarded: false,
   },
   {
     id: '7',
@@ -70,6 +76,7 @@ export const initialTasks: Task[] = [
     currentCompletions: 0,
     completed: false,
     visible: true,
+    bpAwarded: false,
   },
   {
     id: '8',
@@ -80,6 +87,7 @@ export const initialTasks: Task[] = [
     currentCompletions: 0,
     completed: false,
     visible: true,
+    bpAwarded: false,
   },
 ];
 

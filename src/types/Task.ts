@@ -7,5 +7,6 @@ export interface Task {
   currentCompletions: number;
   completed: boolean;
   visible: boolean;
+  bpAwarded: boolean; // BP нараховано тільки один раз при досягненні 5+ виконань
 }
 

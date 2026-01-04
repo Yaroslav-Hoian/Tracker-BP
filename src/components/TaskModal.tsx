@@ -1,15 +1,31 @@
+import { useEffect } from 'react';
 import type { Task } from '../types/Task';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from '../contexts/useLanguage';
 import styles from './TaskModal.module.css';
 
 interface TaskModalProps {
   tasks: Task[];
+  multiplier2x: boolean;
+  multiplierVIP: boolean;
   onClose: () => void;
   onToggleVisibility: (id: string) => void;
 }
 
-const TaskModal = ({ tasks, onClose, onToggleVisibility }: TaskModalProps) => {
+const TaskModal = ({ tasks, multiplier2x, multiplierVIP, onClose, onToggleVisibility }: TaskModalProps) => {
   const { t } = useLanguage();
+  
+  const multiplier = (multiplier2x ? 2 : 1) * (multiplierVIP ? 2 : 1);
+
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+
+    document.addEventListener('keydown', handleEscape);
+    return () => document.removeEventListener('keydown', handleEscape);
+  }, [onClose]);
 
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.target === e.currentTarget) {
@@ -43,6 +59,7 @@ const TaskModal = ({ tasks, onClose, onToggleVisibility }: TaskModalProps) => {
                     className={styles.taskCheckbox}
                   />
                   <span className={styles.taskTitle}>{task.title}</span>
+                  <span className={styles.taskBP}>{Math.round(task.baseBP * multiplier)} BP</span>
                 </label>
               </div>
             ))}

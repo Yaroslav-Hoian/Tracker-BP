@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { Task } from '../types/Task';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from '../contexts/useLanguage';
 import styles from './TaskItem.module.css';
 
 interface TaskItemProps {
